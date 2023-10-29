@@ -141,6 +141,24 @@ public class StockOrderLoader implements CommandLineRunner{
                             .status(StockOrderStatus.PENDING.toString())
                             .build()
             );
+            stockOrderRepository.save(
+                    StockOrder.builder()
+                            .tickerName(Ticker.RELIANCE.toString())
+                            .type(StockOrderType.BUY.toString())
+                            .maxBuyPrice(300.00)
+                            .minSellPrice(0.00)
+                            .status(StockOrderStatus.PENDING.toString())
+                            .build()
+            );
+            stockOrderRepository.save(
+                    StockOrder.builder()
+                            .tickerName(Ticker.RELIANCE.toString())
+                            .type(StockOrderType.SELL.toString())
+                            .maxBuyPrice(301.00)
+                            .minSellPrice(0.00)
+                            .status(StockOrderStatus.PENDING.toString())
+                            .build()
+            );
 
             System.out.println("Sample Orders Loaded");
         }
