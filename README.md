@@ -10,9 +10,11 @@ Structure of the application:
    Currently, the application hosts 2 tickers: TATA & RELIANCE.
 
 4) API :
-  a) localhost:8080/api/v1/orderstock/getOrders : This fetches all the orders based on the Stock Status (Options: COMPLETED/PENDING)
-  b) localhost:8080/api/v1/orderstock/matchOrders : This matches all the orders with PENDING status according to the business logic mentioned above.
 
-5) Queries used in the repository are to fetch orders according to the logic and update the status if a match is found.
+a) localhost:8080/api/v1/orderstock/getOrders : This fetches all the orders based on the Stock Status (Options: COMPLETED/PENDING)
+  
+b) localhost:8080/api/v1/orderstock/matchOrders : This matches all the orders with PENDING status according to the business logic mentioned above.
+
+6) Queries used in the repository are to fetch orders according to the logic and update the status if a match is found.
 
    
