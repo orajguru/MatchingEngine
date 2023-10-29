@@ -7,7 +7,7 @@ Structure of the application:
 2) Controller(API Path Mapping) -> Service(Interface) -> Service(Implementation) -> Repository(Queries to the H2 Database)
 
 3) Buyers and Sellers Matching logic: Minimum Selling Price >= Maximum Buying Price
-   Currently, the application hosts 2 ticekrs: TATA & RELIANCE.
+   Currently, the application hosts 2 tickers: TATA & RELIANCE.
 
 4) API :
   a) localhost:8080/api/v1/orderstock/getOrders : This fetches all the orders based on the Stock Status (Options: COMPLETED/PENDING)
